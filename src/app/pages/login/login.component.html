@@ -1,0 +1,40 @@
+<div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header bg-black text-white">Login</div>
+          <div class="card-body">
+            <form (ngSubmit)="onSubmit()">
+              <div class="mb-3">
+                <label for="username" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  placeholder="Enter Username"
+                  [(ngModel)]="email"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  name="password"
+                  placeholder="Password"
+                  [(ngModel)]="password"
+                  required
+                />
+              </div>
+              <button type="submit" class="btn btn-dark">Login</button>
+              <p class="mb-0">If You Dont Have Account <a routerLink="/signup" class="text-primary">Click Here</a></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
